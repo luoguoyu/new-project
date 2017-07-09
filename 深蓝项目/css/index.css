@@ -1,0 +1,308 @@
+/*adv start ���*/
+.adv{
+    width: 1000px;
+    height: 300px;
+    margin-top: 20px;
+    background: url("../images/adv.png") no-repeat;
+
+}
+
+/*adv end ���*/
+
+/*-nav start ������*/
+.nav{
+    height: 60px;
+    background-color: #e6e6e6;
+    margin-top: 20px;
+}
+.nav li {
+    float: left;
+    width: 140px;
+    height: 52px;
+    padding: 4px 0;
+    text-align: center;
+
+}
+.nav li:first-of-type {
+    width: 120px;
+    font-weight: bold;
+}
+.nav li:first-of-type a {
+    font-weight: bold;
+}
+.nav li a{
+    font: 16px/52px "MicrosoftYaHei";
+    color: #4D4D4D;
+}
+
+.nav ul .active{
+    background-color: #fff;
+    border-top: 4px solid #ccac73;
+    padding-top: 0;
+}
+
+/*<!--nav end ������-->*/
+
+/*<!--main start ��������-->*/
+
+.profile{
+    width: 100%;
+    height: 180px;
+    padding-top: 30px;
+
+}
+.profile-box{
+    width: 920px;
+    height: 120px;
+    padding: 30px 40px;
+}
+.profile-box-people{
+    margin-top: 10px;
+}
+.profile-box-people .head{
+    float: left;
+}
+.profile-box-people .head img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding-right: 20px;
+
+}
+.profile-box-people .word{
+    float: left;
+    width: 230px;
+    margin-top: 10px;
+    margin-right: 20px;
+
+}
+.profile-box-people .word .name{
+    height: 18px;
+    font: 900 18px/18px "MicrosoftYaHei";
+    color: #4D4D4D;
+    margin-bottom: 15px;
+}
+.profile-box-people .word .show{
+    font: 14px/24px "MicrosoftYaHei";
+    color: #B3B3B3;
+}
+.profile-box-img img{
+    float: left;
+    width: 160px;
+    height: 120px;
+    margin-left: 20px;
+}
+.main-ye{
+    height: 120px;
+    width: 100%;
+    position: relative;
+}
+.main-ye-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -20px;
+}
+.main-ye .main-ye-box div{
+    float: left;
+    width: 100px;
+    height: 40px;
+    background-color: #ccac73;
+    margin: 0 5px;
+    font: 500 14px/40px "MicrosoftYaHei";
+    text-align: center;
+    border-radius: 3px;
+}
+.main-ye .main-ye-box .main-ye-num{
+    background-color: #fff;
+}
+.main-ye .main-ye-box .main-ye-num{
+    border: 1px solid #ccc;
+    height: 38px;
+    line-height: 38px;
+    width: 98px;
+    font-size: 18px;
+}
+.main-ye-box i{
+    display: inline-block;
+    width: 30px;
+    height: 38px;
+    position: absolute;
+    top: 1px;
+    right: 116px;
+}
+.main-ye-box i:before{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 7px;
+    border-color: #808080 transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 7px;
+}
+.main-ye-box ul{
+    width: 100px;
+    height: 100px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 40px;
+    right: 116px;
+    background-color: #fff;
+    display: none;
+
+}
+.main
+.main-ye-box ul li {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    padding-left: 18px;
+}
+.main-ye .main-ye-box div a{
+    color: #ffffff;
+}
+
+/*<!--main end ��������-->*/
+
+
+
+/*找工厂*/
+/*seek 搜索栏*/
+
+.seek{
+    margin: 30px auto;
+    width: 560px;
+    height: 45px;
+}
+
+.seek-box{
+    float: left;
+    width: 460px;
+    height: 43px;
+    border: 1px solid #ccac73;
+}
+.seek-word{
+    float: left;
+    display: inline-block;
+    width: 98px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #ccac73;
+    font-size: 18px;
+    color: #ffff00;
+}
+/*<!--seek end 搜索-->*/
+
+/*<!--seek-picture  ->*/
+.seek-picture{
+    width: 800px;
+    height: 55px;
+    margin: 0 auto;
+}
+/*<!--seek-picture  end->*/
+
+.main-style{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.main-style ul li{
+    float: left;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.main-style ul li a{
+    font-size: 14px;
+    color: #000;
+}
+
+
+.main-style ul li:first-child{
+    background-color: #ddc394;
+}
+.main-style ul li:first-child a{
+    color: #ffffff;
+}
+
+.main-items{
+    margin: 30px 60px 0 60px;
+}
+
+.main-items ul{
+    width: 880px;
+    overflow: hidden;
+}
+.main-items ul li{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.main-items ul li:nth-child(3n){
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+
+
+.main-item-img{
+    width: 280px;
+    height: 210px;
+}
+.main-item-img img{
+    display: block;
+    width: 280px;
+    height: 210px;
+}
+
+.main-item-act-name{
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+.main-item-act-name img{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.main-item-act-name span{
+    font-size: 16px;
+    vartical-align: middle;
+    color: #000;
+}
+.main-item-act-mon i{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    color: #666;
+    font-size: 14px;
+}
+.main-item-act-num{
+    margin-top: 10px;
+}
+.main-item-act-num a{
+    color: #B1B1B1;
+    font-size: 14px;
+}
+.main-item-act-num a span{
+    margin: 0 6px;
+}
+
+.main-item-act-num>i{
+    margin-right: 5px;
+}
+
+
+
+/*ye 切换展品页*/
+.ye{
+    display: none;
+}
+

@@ -1,0 +1,643 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float:right;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+
+/*公共部分*/
+
+/*注册*/
+.register{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 100;
+    display: none;
+}
+.register-content{
+    width: 520px;
+    height: 470px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -235px 0 0 -260px;
+    background-color: #fff;
+
+}
+
+.register-content .top{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+}
+.register-content form{
+    margin-top: 30px;
+}
+.register-content form label{
+    display: block;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.register-content form label.submit{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.register-content form .submit input{
+    background-color: #ccac73;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 0;
+}
+.register-content form input{
+    box-sizing: border-box;
+    width: 360px;
+    height: 45px;
+    background-color: #f2f2f2;
+    padding-left: 20px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.register-content form p{
+    text-align: center;
+    color: #b9b9b9;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.register-content form p i{
+    font:500  15px/15px "微软雅黑";
+    color: #000;
+}
+
+/*登陆*/
+.deng{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 100;
+    display: none;
+}
+.denglu{
+    width: 520px;
+    height: 450px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -225px 0 0 -260px;
+    background-color: #fff;
+    /*display: none;*/
+}
+.denglu-x{
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: 30px 40px 0 0;
+    font:500 20px/20px "微软雅黑";
+    cursor: pointer;
+}
+.denglutop{
+    margin-top: 50px;
+    margin-left: 80px;
+    font: 700 24px/24px "微软雅黑";
+    color: #4d4d4d;
+}
+.denglu form {
+    margin-top: 30px;
+    margin-left: 80px;
+}
+.denglu form label{
+    display: block;
+    width: 360px;
+}
+
+
+.denglu form label input{
+    box-sizing: border-box;
+    width: 360px;
+    height: 45px;
+    background-color: #f2f2f2;
+    padding-left: 20px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.lab1{
+    margin-bottom: 20px;
+}
+.lab2{
+    margin-bottom: 10px;
+}
+.lab3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.denglu .remember span{
+    width: 40px;
+    height: 25px;
+    border-radius: 12.5px;
+    margin-left: 5px;
+    margin-right: 10px;
+    background-color: #ccac73;
+    position: relative;
+
+}
+
+.denglu .remember span i{
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: #fff;
+    position: absolute;
+    top: 1.5px;
+    left: 1.5px;
+}
+
+.denglu .remember i{
+    height: 25px;
+    font: 14px/25px "微软雅黑";
+    color: #4d4d4d;
+}
+
+.denglu .remember a{
+    height: 25px;
+    font: 14px/25px "微软雅黑";
+    color: #4d4d4d;
+    padding-right: 10px;
+    text-decoration: underline;
+}
+
+.denglu form .lab3 input{
+    background-color: #ccac73;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 0;
+}
+.denglu-line{
+    margin: 20px 38px;
+    width: 320px;
+    height: 18px;
+}
+.denglu-line span{
+    width: 135px;
+    height: 1px;
+    background-color: #ccc;
+    display: inline-block;
+    margin-bottom: 2.5px;
+}
+
+.denglu-line i{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    margin: 0 3px;
+    background-color: #ccc;
+    display: inline-block;
+}
+
+.denglu form>a{
+    box-sizing: border-box;
+    display: block;
+    width: 360px;
+    height: 45px;
+    border-radius: 3px;
+    font: 16px/45px "微软雅黑";
+    color: #4d4d4d;
+    text-align: center;
+    border: 2px solid #ccac73;
+}
+
+
+/*找回密码*/
+.findP{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 100;
+    display: none;
+}
+.findPassword{
+    width: 520px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -260px;
+    background-color: #fff;
+}
+.findPassword-x{
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: 30px 40px 0 0;
+    font:500 20px/20px "微软雅黑";
+    cursor: pointer;
+}
+.findPasswordT{
+    margin-top: 50px;
+    margin-left: 80px;
+    font: 700 24px/24px "微软雅黑";
+    color: #4d4d4d;
+}
+.findPassword form {
+    margin-top: 30px;
+    margin-left: 80px;
+}
+.findPassword form label{
+    display: block;
+    width: 360px;
+    margin-bottom: 40px;
+}
+.findPassword form .lab1 {
+    position: relative;
+}
+
+.findPassword form .lab1 span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    color: #ccac73;
+    font: 400 16px/45px "微软雅黑";
+    cursor: pointer;
+}
+
+.findPassword form label input{
+    box-sizing: border-box;
+    width: 360px;
+    height: 45px;
+    background-color: #f2f2f2;
+    padding-left: 20px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.findPassword form .lab3 input{
+    background-color: #ccac73;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 0;
+}
+
+
+/*头部*/
+.banxin{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+header{
+    width: 100%;
+    height: 65px;
+    background-color: #ccac73;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.h-left span{
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    background-color: #fcffec;
+    border-radius: 20px;
+    color: #ccac73;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 11px;
+    margin-right: 20px;
+}
+.h-left ul{
+    float: left;
+    height: 65px;
+}
+
+
+.h-left-ul>li{
+    float: left;
+    width: 110px;
+    height: 65px;
+    text-align: center;
+    position: relative;
+
+}
+.h-left-ul>li>a{
+    display: block;
+    height: 65px;
+    line-height: 65px;
+    font-size: 18px;
+    color: #ffffff;
+
+}
+
+.h-left-ul > li >a > .sanjiao {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #ffffff;
+    margin-left: 8px;
+}
+.h-left-ul > li:hover > ul {
+    display: block;
+}
+.h-left-ul > li:hover  {
+    background-color: #b08f51;
+}
+
+.h-left-ul2 {
+    width: 110px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none ;
+}
+.h-left-ul2 > li {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #b08f51;
+}
+
+.h-left-ul2 a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+}
+
+.h-right-sou{
+    float: left;
+    position: relative;
+    margin-right: 12px;
+}
+.h-right-sou input{
+    width: 160px;
+    height: 28px;
+    margin-top: 20px;
+    border-radius: 2px;
+    background-color: #b08f51;
+}
+.h-right-sou-img{
+    display: inline-block;
+    width: 16px;
+    height: 17px;
+    background: url("../images/搜索.png") no-repeat;
+    position: absolute;
+    top: 25px;
+    right: 8px;
+}
+
+
+/*登录前*/
+.before-logn {
+    float: left;
+    margin-left: 20px;
+}
+
+.before-logn a{
+    display: inline-block;
+    height: 65px;
+    font: 500 18px/65px "宋体";
+    color: #fff;
+}
+.before-logn .line{
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    margin: -3px 10px;
+    background: rgba(255,255,255,0.6);
+}
+
+
+/*登录后*/
+.after-logn{
+    display: none;
+}
+
+
+.h-right-fen{
+    float: left;
+    width: 60px;
+    height: 65px;
+    background-color: #9d889b;
+    position: relative;
+}
+
+.h-right-fen span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -9px;
+    margin-left: -9px;
+    width: 18px;
+    height: 18px;
+    background: url("../images/分享.png") no-repeat;
+}
+.h-right-xin{
+    float: left;
+    width: 60px;
+    height: 65px;
+    background-color: #d9bd5f;
+    position: relative;
+}
+
+.h-right-xin span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -9px;
+    margin-left: -9px;
+    width: 18px;
+    height: 18px;
+    background: url("../images/信息.png") no-repeat;
+}
+
+.h-right-img{
+    float: left;
+    width: 60px;
+    height: 65px;
+    background-color: #d9875f;
+    position: relative;
+}
+
+.h-right-img span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/头像.png") no-repeat;
+}
+
+
+/*<!--footer start 底部-->*/
+footer{
+    background-color: #4d4d4d;
+    height: 250px;
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+}
+.foot{
+    width: 1000px;
+    height: 196px;
+    margin: 0 auto;
+    padding-top: 54px;
+}
+.foot-left ul li{
+    float: left;
+    margin-right: 50px;
+}
+.foot-left ul li h3{
+    font: 400 18px/18px "MicrosoftYaHei";
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+.foot-left ul li span{
+    display: block;
+    font: 14px/14px "MicrosoftYaHei";
+    margin-bottom: 10px;
+    color: #B3B3B3;
+}
+.foot-left .erweima {
+    float: left;
+    width: 80px;
+    height: 79px;
+}
+.foot-left .erweima img{
+    display: block;
+    width: 80px;
+    height: 79px;
+}
+.foot-right{
+    /*margin-left: 240px;*/
+    width: 200px;
+}
+.foot-right h3{
+    font: 400 18px/18px "MicrosoftYaHei";
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+.foot-right span{
+    display: inline-block;
+    width: 200px;
+    font: 14px/17px "MicrosoftYaHei";
+    color: #B3B3B3;
+}
